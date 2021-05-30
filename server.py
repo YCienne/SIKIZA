@@ -1,17 +1,16 @@
 from flask import Flask,render_template 
-from modules import config
 
 sikiza = Flask(__name__)  # initialize sikiza
 
 
 @sikiza.route('/')
-def IntroPage():
+def Intro_Page():
     return render_template('index.html')
 
 
 
 @sikiza.route('/home')
-def HomePage():
+def Home_Page():
     return render_template('home.html')
 
 
