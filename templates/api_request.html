@@ -13,10 +13,10 @@
     <div class="first_half">
         <center>
             <h2>API Request</h2>
-            <form method = " " action = "">
-                <input type="text" placeholder="firstname..." required>
-                <input type="text" placeholder="lastname..." required>
-                <input type="email" placeholder="email..." required>
+            <form action="{{ url_for('api_request') }}" method="POST">
+                <input type="text" placeholder="firstname..." name="fname" required>
+                <input type="text" placeholder="lastname..." name="lname" required>
+                <input type="email" placeholder="email..." name="email" required>
                
                 
                 <button type="submit" class="btn btn-primary">Submit</button><br>
